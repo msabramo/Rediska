@@ -39,4 +39,9 @@ class Rediska_TestCase extends PHPUnit_Framework_TestCase
 
         return false;
     }
+
+    protected function assertType($className, $obj)
+    {
+        return $this->assertInstanceOf($className, $obj);
+    }
 }
